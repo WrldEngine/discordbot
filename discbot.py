@@ -69,7 +69,7 @@ async def ban(ctx, member: discord.Member):
 @commands.has_permissions(view_audit_log=True)
 async def mute(ctx, member: discord.Member, time:int, reason):
     try:
-        muterole = discord.utils.get(ctx.guild.roles, id=ROLEID)
+        muterole = discord.utils.get(ctx.guild.roles, id=ROLEID) #Вставляете роль мута
         panel = discord.Embed(title='Muting', color=0xff0000)
         panel.add_field(name='Админ', value=ctx.message.author.mention, inline=False)
         panel.add_field(name='Нарушитель', value=member.mention, inline=False)
@@ -85,7 +85,7 @@ async def mute(ctx, member: discord.Member, time:int, reason):
 @commands.has_permissions(view_audit_log=True)
 async def unmute(ctx, member: discord.Member):
     try:
-        muterole = discord.utils.get(ctx.guild.roles, id=ROLEID)
+        muterole = discord.utils.get(ctx.guild.roles, id=ROLEID) #Вставляете роль мута
         panel = discord.Embed(title='Unmuting', color=0x00ff00)
         panel.add_field(name='Админ', value=ctx.message.author.mention, inline=False)
         panel.add_field(name='Нарушитель', value=member.mention, inline=False)
@@ -97,7 +97,7 @@ async def unmute(ctx, member: discord.Member):
 @commands.has_permissions(view_audit_log=True)
 async def old(ctx, member: discord.Member):
     try:
-        old = discord.utils.get(ctx.guild.roles, id=ROLEID)
+        old = discord.utils.get(ctx.guild.roles, id=ROLEID) #Вставляете роль олда
         panel = discord.Embed(title='Повышение роли[OLD]', color=0xff8000)
         panel.add_field(name='Назначил', value=ctx.message.author.mention, inline=False)
         panel.add_field(name='Участник', value=member.mention, inline=False)
@@ -109,7 +109,7 @@ async def old(ctx, member: discord.Member):
 @commands.has_permissions(view_audit_log=True)
 async def unold(ctx, member: discord.Member):
     try:
-        old = discord.utils.get(ctx.guild.roles, id=ROLEID)
+        old = discord.utils.get(ctx.guild.roles, id=ROLEID) #Вставляете роль олда
         panel = discord.Embed(title='Отстронение от роли[OLD]', color=0xff8000)
         panel.add_field(name='Отстронил', value=ctx.message.author.mention, inline=False)
         panel.add_field(name='Участник', value=member.mention, inline=False)
@@ -121,7 +121,7 @@ async def unold(ctx, member: discord.Member):
 @commands.has_permissions(view_audit_log=True)
 async def xp(ctx, member: discord.Member):
     try:
-        xp = discord.utils.get(ctx.guild.roles, id=ROLEID)
+        xp = discord.utils.get(ctx.guild.roles, id=ROLEID) #Вставляете роль админа
         panel = discord.Embed(title='Повышение роли[X]', color=0x4f0015)
         panel.add_field(name='Назначил', value=ctx.message.author.mention, inline=False)
         panel.add_field(name='Участник', value=member.mention, inline=False)
@@ -133,7 +133,7 @@ async def xp(ctx, member: discord.Member):
 @commands.has_permissions(view_audit_log=True)
 async def unxp(ctx, member: discord.Member):
     try:
-        xp = discord.utils.get(ctx.guild.roles, id=ROLEID)
+        xp = discord.utils.get(ctx.guild.roles, id=ROLEID)#Вставляете роль админа
         panel = discord.Embed(title='Отстронение от роли[X]', color=0x4f0015)
         panel.add_field(name='Отстронил', value=ctx.message.author.mention, inline=False)
         panel.add_field(name='Участник', value=member.mention, inline=False)
