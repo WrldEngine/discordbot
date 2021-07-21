@@ -1,8 +1,16 @@
+# Pulatov Kamran 2021
+# Please, don't change my code
+# Moderation in Russian language
 import discord
 import random
 from discord.ext import commands
 from discord.ext.commands import Bot
 import asyncio
+import os 
+def clear():
+
+  os.system('cls' if os.name=='nt' else 'clear')
+clear()
 Bot = commands.Bot(command_prefix='$')
 mat = ['блять', 'сука', 'ебан', 'нахуй', 'заебал', 'похуй', 'далбаеб', 'долбаеб', 'пидр', 'пидор', 'пидораз', 'гандон', 'гондон', 'пиздец', 'спиздить', 'пизда', 'хуй', 'хуйня',
 'Блять', 'Сука', 'Ебан', 'Нахуй', 'Заебал', 'Похуй', 'Далбаеб', 'Долбаеб', 'Пидр', 'Пидор', 'Пидораз', 'гандон', 'Гондон', 'Пиздец', 'Спиздить', 'Пизда', 'Хуй', 'Хуйня', 'бля', 'Бля', 'Нахуя', 'нахуя',
